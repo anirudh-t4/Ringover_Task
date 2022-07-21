@@ -10,7 +10,7 @@ import filter from "../../images/filter.png"
 const Store = ({ prod, setCart, cart, setFilter1, setFilter2, setFilter3, filter1, filter2, filter3, setSneakers, setLoafers, sneakers, loafers }) => {
   
   return (
-    <div className="store">
+    <div className="store_container">
       <div className="filter">
       <span className="heading">
         <h1>FILTERS</h1>
@@ -41,7 +41,7 @@ const Store = ({ prod, setCart, cart, setFilter1, setFilter2, setFilter3, filter
               setFilter2(!filter2)
           }}
             />
-            &nbsp; Rs. 1500-4000
+            &nbsp; Rs. 4001-7000
           </label>
           <label>
             <input
@@ -50,10 +50,10 @@ const Store = ({ prod, setCart, cart, setFilter1, setFilter2, setFilter3, filter
               name="7001+"
               className="CheckBox" onChange={
             () => {
-              setFilter2(!filter2)
+              setFilter3(!filter3)
           }}
             />
-            &nbsp; Rs. 1500-4000
+            &nbsp; Rs. 7000+
           </label>
           <br />
           </span>
