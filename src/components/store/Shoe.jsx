@@ -21,13 +21,9 @@ const Shoe = ({ pro, setCart, cart }) => {
         <h3>{pro.name}</h3>
         <div >
         <span className="desc">
-            <p>Rs. {pro.price}</p>
+            <p>{pro.price} points</p>
             <div style={{marginLeft: 'auto'}}>
                 <BsStarFill style={{color: 'gold'}} />
-                <BsStarFill style={{color: 'gold'}} />
-                <BsStarFill style={{color: 'gold'}} />
-                <BsStarFill style={{color: 'gold'}} />
-                <BsStarHalf style={{color: 'gold'}} />
             </div>
             </span>
         </div>
