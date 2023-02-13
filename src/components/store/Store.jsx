@@ -18,69 +18,45 @@ const Store = ({ prod, setCart, cart, setFilter1, setFilter2, setFilter3, filter
       </span>
         <div className="responsiveDiv">
         <span className="cost">
-          <h3>Cost</h3>
+          <h3>Reward points</h3>
           <label>
             <input
               type="checkbox"
-              id="1500-4000"
-              name="1500-4000"
+              id="50-100"
+              name="50-100"
               className="CheckBox" onChange={
             () => {
               setFilter1(!filter1)
           }}
             />
-            &nbsp; Rs. 1500-4000
+            &nbsp; 50-100
           </label>
           <label>
             <input
               type="checkbox"
-              id="4001-7000"
-              name="4001-7000"
+              id="101-200"
+              name="101-200"
               className="CheckBox" onChange={
             () => {
               setFilter2(!filter2)
           }}
             />
-            &nbsp; Rs. 4001-7000
+            &nbsp; 101-200
           </label>
           <label>
             <input
               type="checkbox"
-              id="7001+"
-              name="7001+"
+              id="200+"
+              name="200+"
               className="CheckBox" onChange={
             () => {
               setFilter3(!filter3)
           }}
             />
-            &nbsp; Rs. 7000+
+            &nbsp; 200+
           </label>
           <br />
           </span>
-        </div>
-        <br />
-        <span className="color">
-          <h3>Color</h3>
-          <div className="colors">
-            <div style={{ background: "red", padding: "1rem" }}></div>
-            <div style={{ background: "yellow", padding: "1rem" }}></div>
-            <div style={{ background: "blue", padding: "1rem" }}></div>
-            <div style={{ background: "brown", padding: "1rem" }}></div>
-            <div style={{ background: "black", padding: "1rem" }}></div>
-          </div>
-          </span>
-          <br />
-        <div className="design">
-          <h3>Design templates</h3>
-          <input type="checkbox" name="" id="" value={2} />
-          <label htmlFor="2"> 2</label>
-          <br />
-          <input type="checkbox" name="" id="" value={3} />
-          <label htmlFor="3"> 3</label>
-          <br />
-          <input type="checkbox" name="" id="" value="3+" />
-          <label htmlFor="3+"> 3+</label>
-          <br />
         </div>
         <br />
         <div className="type">
@@ -90,14 +66,14 @@ const Store = ({ prod, setCart, cart, setFilter1, setFilter2, setFilter3, filter
                 setSneakers(!sneakers)
             }
           } />
-          <label htmlFor="sneakers"> Sneakers</label>
+          <label htmlFor="sneakers"> Housekeeping</label>
           <br />
           <input type="checkbox" name="" id="loafers" value="loafers" onChange={
             () => {
                 setLoafers(!loafers)
             }
           } />
-          <label htmlFor="loafers"> Loafers</label>
+          <label htmlFor="loafers"> Breakfast</label>
           <br />
         </div>
         <button className="btn">
@@ -107,11 +83,8 @@ const Store = ({ prod, setCart, cart, setFilter1, setFilter2, setFilter3, filter
 
       <div className="filter">
         <div className="heading">
-          <h2>SHOES</h2>
-          <div style={{ marginLeft: "auto" }}>
-            <FiSearch size={24} />
-            <button style={{ padding: "0.4rem", background: "transparent", marginLeft: "2rem" }}>sort by</button>
-          </div>
+          <h2>Complimentary Services</h2>
+          
         </div>
         <div className="shoes__array">
           {prod.map((pro) => (
@@ -121,7 +94,7 @@ const Store = ({ prod, setCart, cart, setFilter1, setFilter2, setFilter3, filter
       </div>
       <div className="filter">
         <div className="cart__header">
-            <h2>CART</h2>
+            <h2>Confirm</h2>
             <FiShoppingBag size={24} style={{marginLeft: 'auto'}} />
             </div>
             <Cart cart={cart} setCart={setCart} />
